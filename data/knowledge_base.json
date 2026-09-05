@@ -1,0 +1,98 @@
+[
+  {
+    "id": "kb-001",
+    "category": "phishing_email",
+    "title": "Fake account suspension / verify-now emails",
+    "summary": "Messages claiming an account will be suspended, locked, or closed unless the recipient clicks a link and 'verifies' their identity immediately. Legitimate providers rarely threaten immediate suspension over email and never require credential entry through an emailed link.",
+    "indicators": ["urgent deadline", "account suspended", "verify now", "click here to avoid closure", "generic greeting"],
+    "source": "Consumer fraud awareness guidance (industry-standard phishing patterns)"
+  },
+  {
+    "id": "kb-002",
+    "category": "otp_scam",
+    "title": "OTP / one-time-passcode sharing requests",
+    "summary": "Scammers impersonate banks or delivery services and ask victims to read out or forward a one-time passcode (OTP) they just received, in order to hijack an account or authorize a fraudulent transaction. No legitimate bank, payment provider, or service will ever ask a customer to share an OTP over phone, SMS, or chat.",
+    "indicators": ["asks for OTP", "asks for verification code", "urgency about a pending transaction", "claims to be bank security team"],
+    "source": "Banking sector fraud-prevention advisories"
+  },
+  {
+    "id": "kb-003",
+    "category": "fake_prize",
+    "title": "Fake lottery, prize, or gift-card winnings",
+    "summary": "Messages claiming the recipient has won a prize, lottery, or gift card they never entered, requiring a small 'processing fee' or personal details to claim it. This is a classic advance-fee fraud pattern.",
+    "indicators": ["you have won", "claim your prize", "processing fee required", "unsolicited notification of a win"],
+    "source": "Advance-fee fraud pattern library"
+  },
+  {
+    "id": "kb-004",
+    "category": "fake_refund",
+    "title": "Unexpected refund or overpayment scams",
+    "summary": "A message states the recipient is owed a refund or was overpaid, and directs them to a link or asks for banking details to 'process' the refund. These schemes are used to harvest banking credentials or induce fraudulent transfers.",
+    "indicators": ["unexpected refund", "overpayment notice", "requests banking details to refund", "link to 'claim refund'"],
+    "source": "Payment fraud pattern library"
+  },
+  {
+    "id": "kb-005",
+    "category": "investment_scam",
+    "title": "Guaranteed-return investment and crypto schemes",
+    "summary": "Offers promising unusually high, guaranteed, or risk-free returns, often pushing victims to act quickly and to reinvest 'profits.' Legitimate investments always carry risk and disclosure; guarantees of high returns with no risk are a hallmark of Ponzi-style fraud.",
+    "indicators": ["guaranteed returns", "double your money", "limited time investment slot", "pressure to reinvest", "unregistered platform"],
+    "source": "Securities fraud advisory patterns"
+  },
+  {
+    "id": "kb-006",
+    "category": "crypto_scam",
+    "title": "Cryptocurrency giveaway and wallet-drain scams",
+    "summary": "Fake celebrity or exchange-branded giveaways asking users to 'send crypto to receive double back,' or fraudulent wallet-connection links designed to drain a victim's crypto wallet.",
+    "indicators": ["send crypto to receive more", "celebrity endorsement giveaway", "connect wallet to claim", "urgency and scarcity language"],
+    "source": "Cryptocurrency fraud pattern library"
+  },
+  {
+    "id": "kb-007",
+    "category": "impersonation",
+    "title": "Impersonation of banks, government agencies, or executives",
+    "summary": "A sender poses as a bank, tax authority, law enforcement agency, or a company executive (CEO fraud / business email compromise) to pressure the recipient into an urgent payment, credential disclosure, or data transfer.",
+    "indicators": ["mismatched sender domain", "authoritative tone", "threat of legal action", "urgent wire transfer request", "unusual request from 'executive'"],
+    "source": "Business email compromise (BEC) pattern library"
+  },
+  {
+    "id": "kb-008",
+    "category": "suspicious_link",
+    "title": "Shortened, misspelled, or lookalike domains",
+    "summary": "Links using URL shorteners, misspelled brand names (typosquatting), unusual top-level domains, or subdomains designed to look like a trusted brand are commonly used to redirect victims to credential-harvesting pages.",
+    "indicators": ["typosquatted domain", "URL shortener", "mismatched display text vs actual link", "unusual top-level domain", "HTTP instead of HTTPS on a login page"],
+    "source": "Web threat intelligence pattern library"
+  },
+  {
+    "id": "kb-009",
+    "category": "social_engineering",
+    "title": "Urgency and fear-based pressure tactics",
+    "summary": "Scammers manufacture time pressure ('act within 30 minutes') or fear ('your account has been compromised') to short-circuit careful thinking and push victims toward hasty, unverified action.",
+    "indicators": ["artificial urgency", "threatening language", "discourages verification", "isolates victim from asking others"],
+    "source": "Social engineering pattern library"
+  },
+  {
+    "id": "kb-010",
+    "category": "fake_support",
+    "title": "Fake tech-support and customer-service scams",
+    "summary": "Unsolicited messages or pop-ups claiming a device is infected or an order has an issue, directing the victim to call a number or install remote-access software, which is then used to steal data or money.",
+    "indicators": ["unsolicited tech support contact", "requests remote access software", "pop-up virus warning", "asks to call a provided number instead of official support"],
+    "source": "Tech-support fraud pattern library"
+  },
+  {
+    "id": "kb-011",
+    "category": "credential_request",
+    "title": "Direct requests for passwords or PINs",
+    "summary": "Any message directly requesting a full password, PIN, or complete card number is a major red flag. Legitimate organizations never ask customers to disclose full passwords or PINs via email, SMS, or chat.",
+    "indicators": ["asks for password", "asks for PIN", "asks for full card number", "asks to confirm login details via link"],
+    "source": "Credential-theft pattern library"
+  },
+  {
+    "id": "kb-012",
+    "category": "delivery_scam",
+    "title": "Fake delivery / customs fee notifications",
+    "summary": "Messages impersonating postal or courier services claim a package is held pending a small fee or 'address confirmation,' leading to a phishing page or a card-skimming payment form.",
+    "indicators": ["small fee to release package", "unexpected delivery notice", "link to 'reschedule' or 'confirm address'", "sender not the actual courier used"],
+    "source": "Delivery fraud pattern library"
+  }
+]
